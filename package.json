@@ -1,0 +1,44 @@
+{
+	"name": "gatsby-starter-default",
+	"description": "Care MED Transport Site",
+	"version": "1.0.0",
+	"author": "Konstantin Minevich",
+	"dependencies": {
+		"dotenv": "^5.0.1",
+		"es6-promise": "^4.2.4",
+		"gatsby": "^1.9.102",
+		"gatsby-cli": "^1.1.58",
+		"gatsby-link": "^1.6.24",
+		"gatsby-plugin-react-helmet": "^1.0.8",
+		"gatsby-plugin-sass": "^1.0.13",
+		"gatsby-plugin-styled-jsx": "^1.0.11",
+		"gatsby-plugin-typography": "^1.7.10",
+		"isomorphic-fetch": "^2.2.1",
+		"prop-types": "^15.6.0",
+		"react-slick": "^0.15.4",
+		"scroll": "^2.0.1",
+		"slick-carousel": "^1.8.1",
+		"typography": "^0.16.6",
+		"typography-theme-funston": "^0.15.10",
+		"typography-theme-irving": "^0.15.10",
+		"typography-theme-moraga": "^0.15.10",
+		"typography-theme-twin-peaks": "^0.15.11",
+		"unfetch": "^3.0.0"
+	},
+	"keywords": [
+		"gatsby"
+	],
+	"license": "MIT",
+	"main": "n/a",
+	"scripts": {
+		"build": "NODE_ENV=production gatsby build",
+		"dev": "NODE_ENV=development gatsby develop",
+		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"eslint-plugin-react": "^7.6.1",
+		"font-awesome": "^4.7.0",
+		"prettier": "^1.8.1"
+	}
+}

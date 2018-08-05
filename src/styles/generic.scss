@@ -1,0 +1,91 @@
+@import './_settings.scss';
+
+$linkColor: scale_color($caremedBlue, $lightness: 20%);
+
+.cf::before,
+.cf::after {
+	display: table;
+	content: '';
+}
+
+.cf::after {
+	clear: both;
+}
+
+.generic-content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.content {
+	flex-basis: 70%;
+}
+
+.side-nav {
+	flex-basis: 18%;
+	padding: 2rem 1rem 1rem 1rem;
+	margin-right: 3rem;
+}
+
+.side-nav a {
+	display: block;
+	margin-bottom: 5px;
+	padding: 4px 9px;
+	color: #444;
+	text-decoration: none;
+	text-align: center;
+
+	&.active {
+		background-color: $linkColor;
+		color: #fff;
+	}
+
+	i {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.site-content {
+		flex-wrap: wrap;
+	}
+	.content {
+		flex-basis: 100%;
+	}
+
+	.side-nav {
+		flex-basis: 100%;
+		padding: 0;
+		margin-right: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.side-nav a {
+		padding: 0.5rem;
+		text-align: center;
+		border: 1px solid #ccc;
+		width: 50%;
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		i {
+			display: none;
+		}
+
+		&.active {
+			border-color: $caremedBlue;
+			color: #fff;
+		}
+
+		&:not(.active) i {
+			display: inline-block;
+			margin-left: 12px;
+		}
+	}
+}
