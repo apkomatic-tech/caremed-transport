@@ -1,20 +1,20 @@
 import React from 'react';
 import HeroSlider from 'react-slick';
 import PropTypes from 'prop-types';
-import Container from './../components/container';
-import FlexContainer from './../components/flex-container';
-import Button from './../components/button';
-import Reviews from './../components/yelp/Reviews';
-import heroImage1 from './../images/caremed-hero1.jpg';
-import heroImage2 from './../images/caremed-hero2.jpg';
-import heroImage3 from './../images/caremed-hero3.jpg';
-import splashImage from './../images/splash.jpg';
-import CardStack from './../components/common/CardStack';
-import Card from './../components/common/Card';
-import CardSection from './../components/common/CardSection';
+import Container from "../components/container";
+import FlexContainer from "../components/flex-container";
+import Button from "../components/button";
+import Reviews from "../components/yelp/Reviews";
+import heroImage1 from "../images/caremed-hero1.jpg";
+import heroImage2 from "../images/caremed-hero2.jpg";
+import heroImage3 from "../images/caremed-hero3.jpg";
+import splashImage from "../images/splash.jpg";
+import CardStack from "../components/common/CardStack";
+import Card from "../components/common/Card";
+import CardSection from "../components/common/CardSection";
 
-import './../styles/slider.scss';
-import './../styles/icons.scss';
+import "../styles/slider.scss";
+import "../styles/icons.scss";
 
 const heroSliderOptions = {
   arrows: false,
@@ -197,17 +197,6 @@ const IndexPage = () => (
         </style>
       </div>
     </Container>
-
-    <div className="yelp">
-      <Container>
-        <h3>
-          <strong>What Customers Are Saying</strong>
-        </h3>
-        <div style={{ margin: '30px 0' }}>
-          <Reviews />
-        </div>
-      </Container>
-    </div>
 
     <div className="extra">
       <Container>
