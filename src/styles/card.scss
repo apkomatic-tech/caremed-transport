@@ -1,10 +1,8 @@
 .card {
-	border: 1px solid #ccc;
+	// border: 1px solid #ccc;
+	box-shadow: 0 5px 40px rgba(0,0,0,.15);
 	background: #fff;
 	border-radius: 4px;
-	&--with-shadow {
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-	}
 
 	&__title {
 		margin: 5px 0;

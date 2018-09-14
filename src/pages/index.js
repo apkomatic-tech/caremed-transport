@@ -1,20 +1,21 @@
 import React from 'react';
 import HeroSlider from 'react-slick';
 import PropTypes from 'prop-types';
-import Container from "../components/container";
-import FlexContainer from "../components/flex-container";
-import Button from "../components/button";
-import Reviews from "../components/yelp/Reviews";
-import heroImage1 from "../images/caremed-hero1.jpg";
-import heroImage2 from "../images/caremed-hero2.jpg";
-import heroImage3 from "../images/caremed-hero3.jpg";
-import splashImage from "../images/splash.jpg";
-import CardStack from "../components/common/CardStack";
-import Card from "../components/common/Card";
-import CardSection from "../components/common/CardSection";
+import Container from '../components/container';
+import FlexContainer from '../components/flex-container';
+import Button from '../components/button';
+import Reviews from '../components/yelp/Reviews';
+import heroImage1 from '../images/caremed-hero1.jpg';
+import heroImage2 from '../images/caremed-hero2.jpg';
+import heroImage3 from '../images/caremed-hero3.jpg';
+import splashImage from '../images/splash.jpg';
+import ahaImage from '../images/aha.svg';
+import CardStack from '../components/common/CardStack';
+import Card from '../components/common/Card';
+import CardSection from '../components/common/CardSection';
 
-import "../styles/slider.scss";
-import "../styles/icons.scss";
+import '../styles/slider.scss';
+import '../styles/icons.scss';
 
 const heroSliderOptions = {
   arrows: false,
@@ -198,6 +199,43 @@ const IndexPage = () => (
       </div>
     </Container>
 
+    <div className="cpr-callout">
+      <div className="cpr-callout--inner">
+        <img width="220" src={ahaImage} alt="American Heart Association logo" />
+        <p>
+          We offer BLS | Heart Saver | First Aid CPR Certification <br />
+          Please call <a href="tel:+17142095739">(714) 209 - 5739</a> for class information.
+        </p>
+      </div>
+      <style jsx>{`
+        .cpr-callout {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 3rem 0;
+          color: rgba(255, 255, 255, 0.8);
+
+          background-color: #3c90ea;
+          background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.25' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        @media only screen and (min-width: 767px) {
+          .cpr-callout--inner {
+            display: flex;
+            align-items: center;
+          }
+
+          img {
+            margin-right: 2rem;
+          }
+        }
+
+        a {
+          color: #fff;
+        }
+      `}</style>
+    </div>
+
     <div className="extra">
       <Container>
         <div className="inner">
@@ -349,7 +387,8 @@ const IndexPage = () => (
             text-align: center;
             margin: 15px 2.5%;
             padding: 24px;
-            border: 1px solid #b3001b;
+            box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+
             transition: background 100ms ease-in-out;
           }
 
