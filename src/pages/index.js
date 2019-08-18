@@ -26,13 +26,13 @@ const heroSliderOptions = {
   draggable: false,
   fade: true,
   pauseOnHover: false,
-  pauseOnFocus: false
+  pauseOnFocus: false,
 };
 
 const heroButtonProps = {
   cssClass: 'callout-btn--primary',
   isLink: true,
-  to: '/contact'
+  to: '/contact',
 };
 
 const Hero = ({ cssClass, text }) => (
@@ -73,15 +73,27 @@ const Hero = ({ cssClass, text }) => (
         }
 
         .hero-1 {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroImage1});
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url(${heroImage1});
         }
 
         .hero-2 {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroImage2});
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url(${heroImage2});
         }
 
         .hero-3 {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroImage3});
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url(${heroImage3});
         }
 
         @media only screen and (max-width: 767px) {
@@ -104,7 +116,7 @@ const Hero = ({ cssClass, text }) => (
 
 Hero.propTypes = {
   cssClass: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 };
 
 const IndexPage = () => (
@@ -144,8 +156,9 @@ const IndexPage = () => (
             </CardSection>
             <CardSection>
               <p className="card__text">
-                That&apos;s why we at Care MED Transport are providing a 24-hour service that should answer to their
-                needs whenever they need it, wherever they are.
+                That&apos;s why we at Care MED Transport are providing a 24-hour
+                service that should answer to their needs whenever they need it,
+                wherever they are.
               </p>
             </CardSection>
           </Card>
@@ -157,9 +170,11 @@ const IndexPage = () => (
             </CardSection>
             <CardSection>
               <p className="card__text">
-                We know that dealing with an ailment is already tough. That's why we chose not to burden our patients
-                with more things to worry about and decided to allow same-day appointments that will allow us to cater
-                to more people who require the special kind of care that we can provide.
+                We know that dealing with an ailment is already tough. That's
+                why we chose not to burden our patients with more things to
+                worry about and decided to allow same-day appointments that will
+                allow us to cater to more people who require the special kind of
+                care that we can provide.
               </p>
             </CardSection>
           </Card>
@@ -172,8 +187,9 @@ const IndexPage = () => (
             </CardSection>
             <CardSection>
               <p className="card__text">
-                We believe that our clients deserve only the best quality service that we can provide and it is our
-                mission to make life easier for people who can use for things to get better.
+                We believe that our clients deserve only the best quality
+                service that we can provide and it is our mission to make life
+                easier for people who can use for things to get better.
               </p>
             </CardSection>
           </Card>
@@ -199,47 +215,12 @@ const IndexPage = () => (
       </div>
     </Container>
 
-    <div className="cpr-callout">
-      <div className="cpr-callout--inner">
-        <img width="220" src={ahaImage} alt="American Heart Association logo" />
-        <p>
-          We offer BLS | Heart Saver | First Aid CPR Certification <br />
-          Please call <a href="tel:+17142095739">(714) 209 - 5739</a> for class information.
-        </p>
-      </div>
-      <style jsx>{`
-        .cpr-callout {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 3rem 0;
-          color: rgba(255, 255, 255, 0.8);
-
-          background-color: #3c90ea;
-          background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.25' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        @media only screen and (min-width: 767px) {
-          .cpr-callout--inner {
-            display: flex;
-            align-items: center;
-          }
-
-          img {
-            margin-right: 2rem;
-          }
-        }
-
-        a {
-          color: #fff;
-        }
-      `}</style>
-    </div>
-
     <div className="extra">
       <Container>
         <div className="inner">
-          <h2>Serving our community with pride, respect and safe transportation.</h2>
+          <h2>
+            Serving our community with pride, respect and safe transportation.
+          </h2>
           <Button cssClass="callout-btn--secondary" to="/contact" isLink>
             Contact Us
           </Button>
@@ -252,7 +233,11 @@ const IndexPage = () => (
             padding: 120px 30px;
             text-align: center;
             background-color: #222;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${splashImage});
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url(${splashImage});
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -295,11 +280,13 @@ const IndexPage = () => (
     <div className="featured-bottom">
       <Container>
         <h3 className="title">
-          <strong>
-            {' '}
-            Care MED Transport is a Non-Emergency Transportation service specializing in wheelchair transportation to:
-          </strong>
+          <strong>Our services</strong>
         </h3>
+        <p>
+          Care MED Transport is a Non-Emergency Transportation service
+          specializing in wheelchair, gurney, and long distance transportation
+          for:
+        </p>
         <div className="featured-bottom-wrapper">
           <div className="bucket">
             <h3>
