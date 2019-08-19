@@ -125,13 +125,13 @@ const IndexPage = () => (
       <div>
         <Hero
           cssClass="hero-1"
-          text="We are a Non-Emergency Medical Transportation services that understands your needs."
+          text="We are a non-emergency medical transportation services that understands your needs."
         />
       </div>
       <div>
         <Hero
           cssClass="hero-2"
-          text="We provide the best quality services for Wheelchair Transportation and Ambulatory Services 24/7."
+          text="We provide the best 24/7 transporation services - wheelchair, gurney, long distance, and ambulatory."
         />
       </div>
       <div>
