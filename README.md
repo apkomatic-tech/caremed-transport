@@ -5,4 +5,4 @@ Care MED Transport is a privately owned and operated company providing Non-emerg
 
 This website was build using GatsbyJS https://www.gatsbyjs.org/
 
-http://caremedtransportinc.com
+http://www.caremedtransport.com/
